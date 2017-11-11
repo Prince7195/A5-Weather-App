@@ -12,7 +12,7 @@ import { WeatherService } from '../services/weather.service';
 })
 export class WeatherSearchComponent implements OnInit {
   
-  private city: string;
+  city: string;
   cityName: string;
   private searchStream = new Subject<string>();
 

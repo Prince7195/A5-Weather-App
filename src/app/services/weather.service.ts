@@ -1,5 +1,5 @@
-import { Injectable, Inject } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Injectable } from '@angular/core';
+// import { Observable } from 'rxjs/Observable';
 import { Http } from '@angular/http';
 import 'rxjs/Rx';
 
@@ -19,13 +19,18 @@ export class WeatherService {
         WEATHER_ITEMS.push(weatherItem);
     }
 
-    searchWeatherData(cityName: string): Observable<any> {
+    // searchWeatherData(cityName: string): Observable<any> {
+    //     return this._http.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${this.api}&units=metric`)
+    //     .map(response => response.json())
+    //     .catch(error => {
+    //         console.log(error);
+    //         return Observable.throw(error.json())
+    //     });
+    // }
+
+    searchWeatherData(cityName: string) {
         return this._http.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${this.api}&units=metric`)
-        .map(response => response.json())
-        .catch(error => {
-            console.log(error);
-            return Observable.throw(error.json())
-        });
+            .map(response => response.json());
     }
 
     clearWeatherItems() {

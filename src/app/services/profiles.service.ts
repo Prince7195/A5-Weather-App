@@ -1,5 +1,5 @@
 import { Profile } from '../models/profile';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs/Rx';
 
 export class ProfileService {
     sendProfiles = new Subject<any>();

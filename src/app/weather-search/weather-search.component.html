@@ -1,0 +1,18 @@
+<section class="weather-search" >
+  <div class="row">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm" >        
+      <div class="col-xs-1">
+        <label for="city" >City</label>
+      </div>  
+      <div class="form-group col-xs-5">
+          <input type="text" class="form-control" name="location" [(ngModel)]="cityName" required>
+        </div>      
+        <div class="col-xs-2">
+          <button type="submit">Add City</button>
+        </div>
+      </form>
+    </div>
+    <div class="row" style="padding-left: 1%" >
+      <span class="info">City found:</span> {{ city }}
+    </div>
+</section>

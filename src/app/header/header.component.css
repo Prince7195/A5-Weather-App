@@ -1,0 +1,12 @@
+header {
+    text-align: right;
+    background-color: rgb(205, 182, 50);
+    margin-top: -1.5%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.app-name {
+    padding-right: 2em;
+    color: rgb(247, 247, 242);
+}

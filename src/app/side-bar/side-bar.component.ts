@@ -3,7 +3,6 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ProfileService } from '../services/profiles.service';
 import { Profile } from '../models/profile';
 import { WeatherService } from '../services/weather.service';
-import { Event } from '_debugger';
 import { EventManager } from '@angular/platform-browser/src/dom/events/event_manager';
 
 @Component({

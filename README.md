@@ -37,7 +37,7 @@ Step2: install ghpage for angular cli by running "npm i -g angular-cli-ghpages" 
 
 Step3: push the complete code to the github repository.
 
-Step4: run ng build --prod --base-href "https://USERNAME.github.io/REPOSITORY/" command. (ng build --prod --base-href https://Prince7195.github.io/A5-B4-FB/)
+Step4: run ng build --prod --base-href "https://USERNAME.github.io/REPOSITORY/" command. (ng build --prod --base-href https://Prince7195.github.io/A5-Weather-App/)
 
 Step5: run ngh cmd.
 
